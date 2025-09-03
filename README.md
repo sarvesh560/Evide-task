@@ -1,16 +1,26 @@
-# busstoptracker
+# Bus Stop Tracker
 
-A new Flutter project.
+##  Overview
+This project implements the **Bus Stop Tracker MVP** for the Evide Flutter Developer Intern take-home task.  
+It demonstrates **list/detail UI, local persistence, and search** using Flutter, GetX, and MVC architecture.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Features Implemented
+- **Bus stop model (BusStop)** with name, latitude, longitude, and time difference
+- **Local JSON persistence** (`assets/mock/stops.json`)
+- **StopController** with GetX for state management
+- **HomeView** displaying list of bus stops
+- **Search functionality** to filter bus stops
+- **DetailsView** for individual stop details
+- **Reusable StopTile widget** for UI consistency
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##  How to Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone repo & checkout branch:
+```bash
+git clone https://github.com/sarvesh560/Evide-task.git
+cd Evide-task
+git checkout feature/sarvesh
