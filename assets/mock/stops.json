@@ -1,0 +1,254 @@
+[
+  {
+    "stopname": "tirur bus stand",
+    "latitude": 10.918188,
+    "longitude": 75.9248477,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Thazhepalam",
+    "latitude": 10.9123488,
+    "longitude": 75.9192942,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Pongottukulam",
+    "latitude": 10.9083502,
+    "longitude": 75.9204388,
+    "timedifference": 4
+  },
+  {
+    "stopname": "Kg padi",
+    "latitude": 10.90604,
+    "longitude": 75.9210088,
+    "timedifference": 6
+  },
+  {
+    "stopname": "Pottathapadi",
+    "latitude": 10.9025588,
+    "longitude": 75.9227422,
+    "timedifference": 4
+  },
+  {
+    "stopname": "Police Line",
+    "latitude": 10.9008857,
+    "longitude": 75.9258026,
+    "timedifference": 6
+  },
+  {
+    "stopname": "Panjami",
+    "latitude": 10.8990358,
+    "longitude": 75.9262005,
+    "timedifference": 7
+  },
+  {
+    "stopname": "Thekkemuri",
+    "latitude": 10.8965214,
+    "longitude": 75.9274699,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Boys school",
+    "latitude": 10.8954491,
+    "longitude": 75.9277693,
+    "timedifference": 6
+  },
+  {
+    "stopname": "Bp Angadi",
+    "latitude": 10.8889322,
+    "longitude": 75.9299365,
+    "timedifference": 5
+  },
+  {
+    "stopname": "By pass",
+    "latitude": 10.8885816,
+    "longitude": 75.930432,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Kannamkulam",
+    "latitude": 10.8829515,
+    "longitude": 75.9423551,
+    "timedifference": 6
+  },
+  {
+    "stopname": "Musliyerangadi",
+    "latitude": 10.8814716,
+    "longitude": 75.9455667,
+    "timedifference": 6
+  },
+  {
+    "stopname": "Kolupalam",
+    "latitude": 10.8808875,
+    "longitude": 75.9483609,
+    "timedifference": 7
+  },
+  {
+    "stopname": "Karathur",
+    "latitude": 10.8737875,
+    "longitude": 75.9560388,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Ajithapadi",
+    "latitude": 10.8672853,
+    "longitude": 75.9674264,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Kodakkal",
+    "latitude": 10.8638178,
+    "longitude": 75.9710849,
+    "timedifference": 1
+  },
+  {
+    "stopname": "Thirunavaya",
+    "latitude": 10.8658905,
+    "longitude": 75.9844705,
+    "timedifference": 4
+  },
+  {
+    "stopname": "Thazhathara",
+    "latitude": 10.8656478,
+    "longitude": 75.9902235,
+    "timedifference": 3
+  },
+  {
+    "stopname": "sakthi nagar",
+    "latitude": 10.8669267,
+    "longitude": 75.9936356,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Rangatoore",
+    "latitude": 10.8674657,
+    "longitude": 76.0013265,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Chembikkal",
+    "latitude": 10.8640384,
+    "longitude": 76.0143185,
+    "timedifference": 7
+  },
+  {
+    "stopname": "kuttippuram bus stand",
+    "latitude": 10.8443729,
+    "longitude": 76.0337333,
+    "timedifference": 5
+  },
+  {
+    "stopname": "kottakkal bus stand",
+    "latitude": 11.0013436,
+    "longitude": 76.0021071,
+    "timedifference": 2
+  },
+  {
+    "stopname": "Arya vaidyasala",
+    "latitude": 11.0004359,
+    "longitude": 76.0025198,
+    "timedifference": 2
+  },
+  {
+    "stopname": "millum padi",
+    "latitude": 10.9999116,
+    "longitude": 75.9979613,
+    "timedifference": 2
+  },
+  {
+    "stopname": "Mini road",
+    "latitude": 11.0000838,
+    "longitude": 75.9941952,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Chenguvetty",
+    "latitude": 10.9986027,
+    "longitude": 75.9913531,
+    "timedifference": 2
+  },
+  {
+    "stopname": "College padi",
+    "latitude": 10.9972866,
+    "longitude": 75.9875212,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Edarikode",
+    "latitude": 10.9941106,
+    "longitude": 75.9805699,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Mammalipadi",
+    "latitude": 10.9875274,
+    "longitude": 75.976272,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Moochikkal",
+    "latitude": 10.9816438,
+    "longitude": 75.9716469,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Kazhungilpadi",
+    "latitude": 10.9714664,
+    "longitude": 75.9669369,
+    "timedifference": 4
+  },
+  {
+    "stopname": "Kuttippala",
+    "latitude": 10.9664837,
+    "longitude": 75.9599917,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Stagepadi",
+    "latitude": 10.966484,
+    "longitude": 75.959992,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Ponmundam",
+    "latitude": 10.9574822,
+    "longitude": 75.9575274,
+    "timedifference": 4
+  },
+  {
+    "stopname": "Vailathur",
+    "latitude": 10.9535635,
+    "longitude": 75.9454447,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Ovungal",
+    "latitude": 10.9466038,
+    "longitude": 75.941589,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Nellikad",
+    "latitude": 10.941333,
+    "longitude": 75.9377112,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Thalakadathur",
+    "latitude": 10.9340317,
+    "longitude": 75.9350719,
+    "timedifference": 5
+  },
+  {
+    "stopname": "Alinchuvad",
+    "latitude": 10.9305817,
+    "longitude": 75.9325644,
+    "timedifference": 3
+  },
+  {
+    "stopname": "Payyanangadi",
+    "latitude": 10.9254871,
+    "longitude": 75.9308418,
+    "timedifference": 3
+  }
+]
