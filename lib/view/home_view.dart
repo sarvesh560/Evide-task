@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../constants/app_colors.dart';
+import '../constants/app_text_styles.dart';
+import '../constants/app_values.dart';
 import '../controller/stop_controller.dart';
+import '../extensions/screen_util_helper.dart';
 import '../widgets/stop_tile.dart';
 import 'details_view.dart';
 
@@ -9,30 +13,35 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: AppColors.background,
       appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.deepPurple,
-        title: const Text("🚏 Bus Stops", style: TextStyle(fontWeight: FontWeight.bold)),
+        elevation: AppValues.elevationAppBar,
+        backgroundColor: AppColors.primary,
+        title: Text("🚏 Bus Stops", style: AppTextStyles.appBarTitle.copyWith(fontSize: ScreenUtilHelper.fontSize(18))),
         centerTitle: true,
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(ScreenUtilHelper.radius(AppValues.borderRadiusLarge))),
         ),
       ),
       body: Column(
         children: [
+          // Search Bar
           Padding(
-            padding: const EdgeInsets.all(12),
+            padding: EdgeInsets.all(ScreenUtilHelper.width(AppValues.paddingMedium)),
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search stops...",
                 prefixIcon: const Icon(Icons.search),
                 filled: true,
-                fillColor: Colors.white,
-                contentPadding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                fillColor: AppColors.white,
+                contentPadding: EdgeInsets.symmetric(
+                  vertical: ScreenUtilHelper.height(AppValues.paddingSmall),
+                  horizontal: ScreenUtilHelper.width(AppValues.paddingMedium),
+                ),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(ScreenUtilHelper.radius(30)),
                   borderSide: BorderSide.none,
                 ),
               ),
@@ -40,17 +49,18 @@ class HomeView extends StatelessWidget {
             ),
           ),
 
-          // List of stops
           Expanded(
             child: Obx(() {
               if (controller.stops.isEmpty) {
                 return const Center(child: CircularProgressIndicator());
               }
               if (controller.filteredStops.isEmpty) {
-                return const Center(child: Text("No stops found 😔"));
+                return Center(
+                  child: Text("No stops found 😔", style: AppTextStyles.subtitle.copyWith(fontSize: ScreenUtilHelper.fontSize(14))),
+                );
               }
               return ListView.builder(
-                padding: const EdgeInsets.all(12),
+                padding: EdgeInsets.all(ScreenUtilHelper.width(AppValues.paddingMedium)),
                 itemCount: controller.filteredStops.length,
                 itemBuilder: (context, index) {
                   final stop = controller.filteredStops[index];
@@ -60,8 +70,7 @@ class HomeView extends StatelessWidget {
                       stop: stop,
                       isFavorite: controller.favorites.contains(stop.stopname),
                       onTap: () {
-                        Get.to(() => DetailView(stop: stop),
-                            transition: Transition.cupertino);
+                        Get.to(() => DetailView(stop: stop), transition: Transition.cupertino);
                       },
                       onFavTap: () => controller.toggleFavorite(stop.stopname),
                     ),

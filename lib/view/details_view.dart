@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import '../constants/app_colors.dart';
+import '../constants/app_text_styles.dart';
+import '../constants/app_values.dart';
+import '../extensions/screen_util_helper.dart';
 import '../model/stop_model.dart';
 
 class DetailView extends StatelessWidget {
@@ -9,60 +13,62 @@ class DetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      backgroundColor: Colors.grey.shade100,
+      backgroundColor: AppColors.background,
       appBar: AppBar(
-        title: Text(stop.stopname),
-        backgroundColor: Colors.deepPurple,
-        elevation: 0,
+        title: Text(stop.stopname, style: AppTextStyles.appBarTitle.copyWith(fontSize: ScreenUtilHelper.fontSize(18))),
+        backgroundColor: AppColors.primary,
+        elevation: AppValues.elevationAppBar,
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.all(ScreenUtilHelper.width(AppValues.paddingMedium)),
         child: Column(
           children: [
             Hero(
               tag: stop.stopname,
               child: Container(
-                height: 180,
+                height: ScreenUtilHelper.height(180),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  gradient: LinearGradient(
-                    colors: [Colors.deepPurple, Colors.purpleAccent],
+                  borderRadius: BorderRadius.circular(ScreenUtilHelper.radius(AppValues.borderRadiusLarge)),
+                  gradient: const LinearGradient(
+                    colors: [AppColors.primary, AppColors.accent],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ),
                 ),
                 alignment: Alignment.center,
-                child: Text(
-                  stop.stopname,
-                  style: const TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    shadows: [Shadow(blurRadius: 8, color: Colors.black54)],
-                  ),
-                ),
+                child: Text(stop.stopname, style: AppTextStyles.heroTitle.copyWith(fontSize: ScreenUtilHelper.fontSize(22))),
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: ScreenUtilHelper.height(AppValues.paddingLarge)),
 
             Card(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(ScreenUtilHelper.radius(AppValues.borderRadiusMedium)),
+              ),
               child: ListTile(
-                leading: const Icon(Icons.location_on, color: Colors.deepPurple),
-                title: Text("Latitude: ${stop.latitude}"),
-                subtitle: Text("Longitude: ${stop.longitude}"),
+                leading: const Icon(Icons.location_on, color: AppColors.primary),
+                title: Text("Latitude: ${stop.latitude}", style: AppTextStyles.title.copyWith(fontSize: ScreenUtilHelper.fontSize(16))),
+                subtitle: Text("Longitude: ${stop.longitude}", style: AppTextStyles.subtitle.copyWith(fontSize: ScreenUtilHelper.fontSize(14))),
               ),
             ),
-            const SizedBox(height: 12),
+
+            SizedBox(height: ScreenUtilHelper.height(AppValues.paddingMedium)),
+
             Card(
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(ScreenUtilHelper.radius(AppValues.borderRadiusMedium)),
+              ),
               child: ListTile(
-                leading: const Icon(Icons.timer, color: Colors.deepPurple),
-                title: const Text("Estimated Time Arrival"),
+                leading: const Icon(Icons.timer, color: AppColors.primary),
+                title: Text("Estimated Time Arrival", style: AppTextStyles.title.copyWith(fontSize: ScreenUtilHelper.fontSize(16))),
                 subtitle: Text(
                   eta,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: AppTextStyles.subtitle.copyWith(
+                    fontSize: ScreenUtilHelper.fontSize(14),
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
